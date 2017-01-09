@@ -1,0 +1,6 @@
+[submodule "ormLibrary"]
+	path = ormLibrary
+	url = https://niyueming@github.com/niyueming/ormLibrary.git
+[submodule "liteOrmLibrary"]
+	path = liteOrmLibrary
+	url = https://niyueming@github.com/niyueming/liteOrmLibrary.git
