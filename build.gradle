@@ -18,6 +18,15 @@ allprojects {
     }
 }
 
+ext {
+    compileSdkVersion = 25
+    targetSdkVersion = compileSdkVersion
+    minSdkVersion = 16
+    buildToolsVersion = '24.0.2'
+    supportLibVersion = '25.1.0'
+    playServicesVersion = '9.4.0'
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
