@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.litesuits.orm.LiteOrm;
 import com.litesuits.orm.db.annotation.Column;
 import com.litesuits.orm.db.annotation.Default;
 import com.litesuits.orm.db.annotation.Ignore;
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView text = (TextView) findViewById(R.id.text);
-        NOrm nOrm = NOrmImpl.getInstance(this);
+        NOrm<LiteOrm> nOrm = NOrmImpl.getInstance(this);
 
         User user = new User();
         user.setId(1);
